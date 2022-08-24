@@ -1,0 +1,37 @@
+.note {
+    background-color: #feff9c;
+    height: 10em;
+    width: 10em;
+    color: black;
+    margin: 1em;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: rotate(-6deg);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1em;
+}
+.note:nth-child(even) {
+    background-color: aqua;
+    transform: rotate(4deg);
+    position: relative;
+}
+.note:nth-child(3n) {
+    background-color: tomato;
+    transform: rotate(-3deg);
+    position: relative;
+    top: 5px;
+}
+.note:hover {
+    transform: scale(1.5);
+    transition: all ease 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.Notes__text {
+    flex: 1;
+}
+.Notes__link{
+    display: none;
+}
